@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+header img {
+    height: 40px;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    color: red;
+    font-weight: lighter;
+}
+
+.travel-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("imagens/london.jpg");
+    margin: 0;
+}
+
+
+.travel-card {
+    background-color: white;
+    width: 80%;
+    margin: 150px 0;
+
+}
+
+.travel-card-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.travel-type {
+    flex: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.selected {
+    background: red;
+}
+
+.travel-type img {
+    height: 20px;
+}
+
+.travel-type p {
+    color: white;
+    margin: 0 16px;
+}
+
+.travel-card h2 {
+    font-weight: lighter;
+}
+
+.travel-card-main {
+    padding: 20px;
+}
+
+.travel-card-main form {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.travel-card-main form div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+input[type="text"] {
+    margin-top: 4px;
+    padding: 10px;
+    border: 1px solid gray;
+    margin-right: 12px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: gray;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.offers-section p{
+    margin-top: 12px;
+}
+
+
+.offers-section .grid {
+    margin-top: 12px;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+
+.offers-section .grid div {
+    background-color: red;
+    position: relative;
+}
+
+.offers-section .grid div img{
+    width: 100%;
+    height: 100%;
+}
+.offers-section .grid div h3{
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    color: white;
+    font-weight: lighter;
+}
+
+.grid-div1 {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.grid-div2 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.grid-div3 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.grid-div4 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.grid-div5 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+
+
+.explore-section p{
+    margin-bottom: 12px;
+}
+
+.explore-card-group{
+    margin-top: 12px;
+    
+    display: flex;
+    
+    justify-content: space-between;
+    
+    
+    
+}
+
+.explore-card{
+    width: 49%;
+    margin-bottom: 12px;
+}
+
+.explore-card img{
+    width: 100%;
+}
+
+.explore-card div{
+    background-color: white;
+    padding: 8px;
+    padding-bottom: 16px;
+}
+
+.newsletter-section{
+
+    background-color: #535353;
+    padding: 20px;
+    color: white;
+}
+
+.newsletter-section p{
+    margin-top: 12px;
+}
+
+.newsletter-section form{
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.newsletter-section input[type="text"]{
+    width: 100%;
+}
+
+.btn-newsletter{
+    background-color: red;
+}
+
+
+
+.contact-section h2{
+    margin-bottom: 12px;
+}
+
+.contact-info{
+    margin: 12px 0;
+}
+
+.contact-info img{
+    width: 20px;
+    margin-right: 8px;
+}
+
+.contact-info div{
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.contact-section form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.btn-contact{
+    background: black;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d1d1d1;
+}
+
+
+
+footer .social-medias img{
+    width: 40px;
+}
+
+footer h2, footer div, footer small{
+    margin: 20px;
+    color: #3b3b3b;
+}
+
+
+section{
+    margin: 20px 80px;
+}
+
+
+@media screen and (max-width:450px){
+    
+section{
+    margin: 20px 10px;
+}
+.explore-card-group{
+    flex-direction: column;
+}
+
+.explore-card{
+    width: 100%;
+}
+
+.offers-section .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.grid-div1 { grid-area: 1 / 1 / 2 / 2; }
+.grid-div2 { grid-area: 2 / 1 / 3 / 2; }
+.grid-div3 { grid-area: 3 / 1 / 4 / 2; }
+.grid-div4 { grid-area: 4 / 1 / 5 / 2; }
+.grid-div5 { grid-area: 5 / 1 / 6 / 2; }
+
+
+.travel-card {
+    width: 100%;
+    margin: 0;
+}
+
+.travel-card form{
+    flex-direction: column;
+}
+
+
+
+}
+
