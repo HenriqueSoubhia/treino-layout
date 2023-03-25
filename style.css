@@ -108,6 +108,7 @@ input[type="text"] {
     padding: 10px;
     border: 1px solid gray;
     margin-right: 12px;
+    width:97%;
 }
 
 input[type="text"]:focus {
