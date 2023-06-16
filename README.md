@@ -1,3 +1,16 @@
-# Treino de site responsivo
+# Recriação de Layout em HTML/CSS 
 
-Para aprimorar minhas habilidades de css responsivo peguei imagens de um layout pronto e o fiz em html e css 
+Neste projeto, recriei o layout do vídeo [Como é o HTML e CSS de um Estagiário?](https://www.youtube.com/watch?v=YPYwND5WGxw) utilizando HTML e CSS. O objetivo foi praticar minhas habilidades em front-end e reproduzir fielmente o design apresentado.
+
+## Demonstração
+
+![video demostrativo](demostracao.gif)
+
+## Tecnologias utilizadas
+
+- HTML, com as boas praticas de SEO
+- CSS, flexbox, grid e @media
+
+## Reconhecimentos
+
+Design do site feito foi tirado do video da DevMedia
